@@ -1,7 +1,14 @@
 package board.domain;
 
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.ToString;
+
 import java.time.LocalDateTime;
 
+@Getter
+@ToString
+@Table
 public class Article {
     private Long id;
     private String title; // 제목
