@@ -72,3 +72,4 @@ public class Article {
         return Objects.hash(id);
     }
 }
+
