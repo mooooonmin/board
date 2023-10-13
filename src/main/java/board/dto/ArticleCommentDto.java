@@ -1,6 +1,5 @@
 package board.dto;
 
-
 import board.domain.Article;
 import board.domain.ArticleComment;
 
