@@ -1,4 +1,6 @@
 import board.domain.Article;
+import board.domain.QArticle;
+import board.domain.QHashtag;
 import board.repository.querydsl.ArticleRepositoryCustom;
 import com.querydsl.jpa.JPQLQuery;
 import org.springframework.data.domain.Page;
