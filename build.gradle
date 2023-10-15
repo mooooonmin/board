@@ -38,7 +38,7 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     testImplementation 'org.projectlombok:lombok:1.18.28'
     runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'mysql:mysql-connector-java'
+    runtimeOnly 'mysql:mysql-connector-java'  // TODO 아마 mysql 미설치로 인한 오류같으므로 추후 확인후 빌드해보기
     runtimeOnly 'org.postgresql:postgresql'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
