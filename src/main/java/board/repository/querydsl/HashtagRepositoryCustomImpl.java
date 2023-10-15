@@ -1,5 +1,6 @@
 package board.repository.querydsl;
 
+import board.domain.Hashtag;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 
 import java.util.List;
