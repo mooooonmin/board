@@ -32,13 +32,12 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     implementation 'org.springframework.boot:spring-boot-starter-security'
-    // implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
     implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     testImplementation 'org.projectlombok:lombok:1.18.28'
     runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'mysql:mysql-connector-java'  // TODO 아마 mysql 미설치로 인한 오류같으므로 추후 확인후 빌드해보기
+    runtimeOnly 'mysql:mysql-connector-java'
     runtimeOnly 'org.postgresql:postgresql'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -49,12 +48,16 @@ dependencies {
     testImplementation 'org.springframework.security:spring-security-test'
 
     // queryDSL 설정
-    implementation "com.querydsl:querydsl-jpa"
+    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
     implementation "com.querydsl:querydsl-core"
     implementation "com.querydsl:querydsl-collections"
-    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa" // querydsl JPAAnnotationProcessor 사용 지정
+    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+    // annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa" // querydsl JPAAnnotationProcessor 사용 지정
+    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api" // java.lang.NoClassDefFoundError (javax.annotation.Generated) 대응 코드
     annotationProcessor "jakarta.persistence:jakarta.persistence-api" // java.lang.NoClassDefFoundError (javax.annotation.Entity) 대응 코드
+
+
 }
 
 tasks.named('test') {

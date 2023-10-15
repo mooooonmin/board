@@ -4,6 +4,7 @@ import board.config.TestSecurityConfig;
 import board.dto.ArticleCommentDto;
 import board.dto.request.ArticleCommentRequest;
 import board.service.ArticleCommentService;
+import board.util.FormDataEncoder;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

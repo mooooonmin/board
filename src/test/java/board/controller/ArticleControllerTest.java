@@ -11,6 +11,7 @@ import board.dto.request.ArticleRequest;
 import board.dto.response.ArticleResponse;
 import board.service.ArticleService;
 import board.service.PaginationService;
+import board.util.FormDataEncoder;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
