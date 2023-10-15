@@ -2,6 +2,7 @@ package board.repository;
 
 import board.domain.Article;
 import board.domain.QArticle;
+import board.domain.projection.ArticleProjection;
 import com.querydsl.core.types.dsl.DateTimeExpression;
 import com.querydsl.core.types.dsl.StringExpression;
 import org.springframework.data.domain.Page;

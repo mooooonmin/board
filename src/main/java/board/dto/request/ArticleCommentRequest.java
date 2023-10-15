@@ -1,6 +1,7 @@
 package board.dto.request;
 
 import board.dto.ArticleCommentDto;
+import board.dto.UserAccountDto;
 
 public record ArticleCommentRequest(
         Long articleId,

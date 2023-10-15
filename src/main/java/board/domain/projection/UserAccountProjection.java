@@ -1,5 +1,6 @@
 package board.domain.projection;
 
+import board.domain.UserAccount;
 import org.springframework.data.rest.core.config.Projection;
 
 import java.time.LocalDateTime;

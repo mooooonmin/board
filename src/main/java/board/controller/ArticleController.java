@@ -5,6 +5,7 @@ import board.dto.request.ArticleRequest;
 import board.dto.response.ArticleResponse;
 import board.dto.response.ArticleWithCommentsResponse;
 import board.service.ArticleService;
+import board.service.PaginationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

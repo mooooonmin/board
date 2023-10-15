@@ -4,6 +4,8 @@ import board.domain.Article;
 import board.domain.constant.SearchType;
 import board.dto.ArticleDto;
 import board.repository.ArticleRepository;
+import board.repository.HashtagRepository;
+import board.repository.UserAccountRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

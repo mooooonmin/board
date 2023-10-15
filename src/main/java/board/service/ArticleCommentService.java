@@ -2,9 +2,11 @@ package board.service;
 
 import board.domain.Article;
 import board.domain.ArticleComment;
+import board.domain.UserAccount;
 import board.dto.ArticleCommentDto;
 import board.repository.ArticleCommentRepository;
 import board.repository.ArticleRepository;
+import board.repository.UserAccountRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
