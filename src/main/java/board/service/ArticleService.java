@@ -1,7 +1,7 @@
 package board.service;
 
 import board.domain.Article;
-import board.domain.type.SearchType;
+import board.domain.constant.SearchType;
 import board.dto.ArticleDto;
 import board.repository.ArticleRepository;
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,6 @@
 package board.controller;
 
-import board.domain.type.SearchType;
+import board.domain.constant.SearchType;
 import board.dto.ArticleDto;
 import board.service.ArticleService;
 import org.junit.jupiter.api.Disabled;

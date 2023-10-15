@@ -1,8 +1,12 @@
 package board.controller;
 
-import board.domain.type.SearchType;
+import board.domain.constant.SearchType;
+import board.dto.request.ArticleRequest;
+import board.dto.response.ArticleResponse;
+import board.dto.response.ArticleWithCommentsResponse;
 import board.service.ArticleService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
