@@ -1,9 +1,11 @@
 package board.controller;
 
+import board.domain.constant.FormStatus;
 import board.domain.constant.SearchType;
 import board.dto.request.ArticleRequest;
 import board.dto.response.ArticleResponse;
 import board.dto.response.ArticleWithCommentsResponse;
+import board.dto.security.BoardPrincipal;
 import board.service.ArticleService;
 import board.service.PaginationService;
 import lombok.RequiredArgsConstructor;

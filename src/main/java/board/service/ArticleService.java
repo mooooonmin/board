@@ -1,8 +1,11 @@
 package board.service;
 
 import board.domain.Article;
+import board.domain.Hashtag;
+import board.domain.UserAccount;
 import board.domain.constant.SearchType;
 import board.dto.ArticleDto;
+import board.dto.ArticleWithCommentsDto;
 import board.repository.ArticleRepository;
 import board.repository.HashtagRepository;
 import board.repository.UserAccountRepository;

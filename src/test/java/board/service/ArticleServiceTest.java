@@ -1,9 +1,16 @@
 package board.service;
 
 import board.domain.Article;
+import board.domain.Hashtag;
+import board.domain.UserAccount;
 import board.domain.constant.SearchType;
 import board.dto.ArticleDto;
+import board.dto.ArticleWithCommentsDto;
+import board.dto.HashtagDto;
+import board.dto.UserAccountDto;
 import board.repository.ArticleRepository;
+import board.repository.HashtagRepository;
+import board.repository.UserAccountRepository;
 import org.assertj.core.api.InstanceOfAssertFactories;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

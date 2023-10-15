@@ -8,11 +8,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @Disabled("Spring Data REST 통합테스트는 불필요하므로 제외시킴")
@@ -20,18 +19,18 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Transactional
 @AutoConfigureMockMvc
 @SpringBootTest
-public class DataRestTest {
+class DataRestTest {
 
     private final MockMvc mvc;
 
-    public DataRestTest(@Autowired MockMvc mvc) {
+    DataRestTest(@Autowired MockMvc mvc) {
         this.mvc = mvc;
     }
 
 
     @DisplayName("[api] 게시글 리스트 조회")
     @Test
-    void givenNothing_whenRequestingArticles_thenreturnsArticlesJxonResponse() throws Exception {
+    void givenNothing_whenRequestingArticles_thenReturnsArticlesJsonResponse() throws Exception {
         // Given
 
         // When & Then
@@ -42,7 +41,7 @@ public class DataRestTest {
 
     @DisplayName("[api] 게시글 단건 조회")
     @Test
-    void givenNothing_whenRequestingArticles_thenreturnsArticlesJxonResponse() throws Exception {
+    void givenNothing_whenRequestingArticle_thenReturnsArticleJsonResponse() throws Exception {
         // Given
 
         // When & Then
@@ -53,7 +52,7 @@ public class DataRestTest {
 
     @DisplayName("[api] 게시글 -> 댓글 리스트 조회")
     @Test
-    void givenNothing_whenRequestingArticleCommentsFromarticle_thenreturnsArticleCommentsJxonResponse() throws Exception {
+    void givenNothing_whenRequestingArticleCommentsFromArticle_thenReturnsArticleCommentsJsonResponse() throws Exception {
         // Given
 
         // When & Then
@@ -64,7 +63,7 @@ public class DataRestTest {
 
     @DisplayName("[api] 댓글 리스트 조회")
     @Test
-    void givenNothing_whenRequestingArticleComments_thenreturnsArticleCommentsJxonResponse() throws Exception {
+    void givenNothing_whenRequestingArticleComments_thenReturnsArticleCommentsJsonResponse() throws Exception {
         // Given
 
         // When & Then
@@ -75,7 +74,7 @@ public class DataRestTest {
 
     @DisplayName("[api] 댓글 단건 조회")
     @Test
-    void givenNothing_whenRequestingArticleComment_thenreturnsArticleCommentJxonResponse() throws Exception {
+    void givenNothing_whenRequestingArticleComment_thenReturnsArticleCommentJsonResponse() throws Exception {
         // Given
 
         // When & Then
@@ -97,6 +96,5 @@ public class DataRestTest {
         mvc.perform(delete("/api/userAccounts")).andExpect(status().isNotFound());
         mvc.perform(head("/api/userAccounts")).andExpect(status().isNotFound());
     }
-}
 
-// 테스트에서 계속 에러가 나는 이유는 아마도 더미데이터 안넣어줘서인듯
+}

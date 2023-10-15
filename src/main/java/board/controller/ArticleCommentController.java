@@ -1,6 +1,7 @@
 package board.controller;
 
 import board.dto.request.ArticleCommentRequest;
+import board.dto.security.BoardPrincipal;
 import board.service.ArticleCommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

@@ -1,6 +1,5 @@
-package board.repository.querydsl;
-
 import board.domain.Article;
+import board.repository.querydsl.ArticleRepositoryCustom;
 import com.querydsl.jpa.JPQLQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
