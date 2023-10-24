@@ -1,6 +1,7 @@
 package board.dto.response;
 
 import board.dto.ArticleDto;
+import board.dto.HashtagDto;
 
 import java.time.LocalDateTime;
 import java.util.Set;

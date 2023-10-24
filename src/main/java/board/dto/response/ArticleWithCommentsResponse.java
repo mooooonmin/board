@@ -1,14 +1,11 @@
 package board.dto.response;
 
-
+import board.dto.HashtagDto;
 import board.dto.ArticleCommentDto;
 import board.dto.ArticleWithCommentsDto;
 
 import java.time.LocalDateTime;
-import java.util.Comparator;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
